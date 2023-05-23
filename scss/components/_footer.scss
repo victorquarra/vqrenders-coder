@@ -1,0 +1,25 @@
+footer{
+    background-color: nth($colores, 5);
+    .footerLogos{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px 5px 15px 5px;
+        div{
+            .logoTipografia{
+                font-family: $tipografiaGeneral;
+                font-weight: 400;
+            }
+        }
+        .redesSociales{
+            margin: 15px 5px 15px 5px;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+    .footerDerechos{
+        font-family: $tipografiaGeneral;
+        text-align: center;
+    }
+}

@@ -1,0 +1,20 @@
+header{
+    .navbar navbar-expand-lg navbar-light bg-ligh{
+        .container-fluid{
+            div{
+                .logoTipografia{
+                    font-family: $tipografiaGeneral;
+                }
+            }
+            .collapse navbar-collapse #navbarSupportedContent{
+                .navbar-nav ms-auto mb-2 mb-lg-0{
+                    .nav-item{
+                        .nav-link{
+                            font-family: $tipografiaGeneral;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

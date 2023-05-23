@@ -1,0 +1,122 @@
+/*---------MEDIA QUERIES---------*/
+/*-------DESKTOP TO LAPTOP  1024 - 1370 --------*/
+@media screen and (max-width:1370px){
+/*MAIN INDEX*/
+main {
+    .gridContainer {
+        margin-top: 5px;
+        @include grid (grid, 5px);
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        font-family: $tipografiaGeneral;
+        .primerItem {
+            display: none;
+        }
+        .cuartoItem {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+}
+}
+/*-------LAPTOPS  769 - 1024 --------*/
+@media screen and (max-width:1024px){
+/*MAIN CONTACTO*/
+main {
+    .gridContacto {
+        grid-template-rows: 1fr 1FR;
+        grid-template-columns: 1fr;
+    }
+}
+}
+/*-------IPAD-TABLETS 481 a 768--------*/
+@media screen and (max-width:768px){
+/*MAIN INDEX*/
+main {
+    .gridContainer {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 3px;
+        .primerItem {
+            display: none;
+        }
+        .segundoItem {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .tercerItem {
+            grid-column-start: 1;
+            grid-column-end: 2;  
+        }
+        .cuartoItem {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+    }
+}
+
+/*MAIN NOSOTROS*/
+main {
+    .nosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 48% 52%;
+        .nosImg1 {
+            display: none;
+        }
+        .gridNosotros {
+            display: flex;
+            margin: 10px;
+            justify-content: left;
+        }
+        .nosImg2 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+}
+}
+/*-------MOBILE < 480--------*/
+@media screen and (max-width:480px){
+/*MAIN INDEX*/
+main {
+    .gridContainer {
+        grid-template-rows: 0.8fr 1.5fr 0.7fr ;
+        grid-template-columns: 1fr;
+        gap: 1px;
+        .tercerItem {
+            .todasIdeas {
+                display: flex;
+                flex-direction: column;
+                .ideas {
+                    flex-direction: column;
+                    margin: 6px 20px 6px 20px;
+                }
+            }
+        }
+    }
+}
+
+/*MAIN NOSOTROS*/
+main {
+    .nosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        .nosImg1 {
+            display: none;
+        }
+        .gridNosotros {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            display: flex;
+            margin: 10px;
+            justify-content: left;
+        }
+        .nosImg2 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+    }
+}
+}

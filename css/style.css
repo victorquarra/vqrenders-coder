@@ -17,6 +17,7 @@
 }
 
 /*--------MAIN--------*/
+/*INDEX*/
 
 .gridContainer{
     margin-top: 5px;
@@ -81,6 +82,7 @@
 .tercerItem .todasIdeas .ideas a:hover{
     background-color: rgb(192, 192, 192);
 }
+/**/
 .tercerItem .todasIdeas .ideas a:active{
     background-color: rgb(172, 172, 172);
 }
@@ -94,13 +96,19 @@
     width: 100%;
     height: auto;
 }
-/*----------------------*/
+/*PORTFOLIO*/
 .portfolioAdentro{
     margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.portfolioAdentro h1{
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 25px;
 }
 
 .portfolioAdentro h2{
-    font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     text-align: center;
 }
@@ -125,12 +133,13 @@
     max-height: 100%;
 }
 
-/*----------------------*/
+/*CONTACTO*/
 
 .gridContacto{
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
+    margin: 5px;
 }
 
 .contactanos{
@@ -138,12 +147,13 @@
     font-size: 15px;
     font-weight: normal;
     justify-content: center;
-    text-align: center;
+    text-align: left;
 }
 
 .contactanos div{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: left;
 }
 
 .contactanos div a{
@@ -157,18 +167,18 @@
 
 .registrate{
     display: grid;
-    text-align: center;
+    text-align: left;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     font-weight: normal;
 }
 
-/*---------------------------*/
+/*CLIENTES*/
 .clientes{
     margin-top: 10px;
 }
 
-.clientes h2{
+.clientes h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 700;
     text-align: center;
@@ -185,11 +195,19 @@
     margin: 10px 10px 10px 10px;
     max-width: 200px;
     object-fit: contain;
+    transition: 0.5s;
 }
 
-/*----------------*/
+.clientes div img:hover{
+    transform: scale(1.1);
+}
+
+
+
+/*NOSOTROS*/
 
 .nosotros{
+    font-family: 'Montserrat', sans-serif;
     display: grid;
     margin: 5px;
     grid-template-columns: 50% 50%;
@@ -281,8 +299,8 @@ footer .footerDerechos{
 }
 
 /*-------IPAD-TABLETS 481 a 768--------*/
-/*-MAIN INDEX-*/
 @media screen and (max-width:768px){
+/*-MAIN INDEX-*/
     .gridContainer{
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
@@ -327,11 +345,12 @@ footer .footerDerechos{
 }
 
 /*-------MOBILE < 480--------*/
-/*-MAIN INDEX-*/
 @media screen and (max-width:480px){
+/*-MAIN INDEX-*/
+
     
     .gridContainer{
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 0.8fr 1.5fr 0.7fr ;
         grid-template-columns: 1fr;
         gap: 1px;
     }
@@ -354,16 +373,20 @@ footer .footerDerechos{
 .nosotros .nosImg1{
     display: none;
 }
+/*
 .nosotros div{
     grid-column-start: 1;
     grid-column-end: 2;
 }
+*/
 .nosotros .nosImg2{
     grid-column-start: 1;
     grid-column-end: 2;
 }
 
 .nosotros .gridNosotros{
+    grid-column-start: 1;
+    grid-column-end: 2;
     display: flex;
     margin: 10px;
     justify-content: left;
