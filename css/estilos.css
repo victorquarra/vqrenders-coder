@@ -130,6 +130,28 @@ main .gridContacto {
     font-size: 15px;
     font-weight: normal;
     padding: 10px; }
+    main .gridContacto .registrate .speaker-form {
+      display: flex;
+      flex-direction: column;
+      padding: 10px; }
+      main .gridContacto .registrate .speaker-form .form-row {
+        display: flex;
+        flex-direction: column;
+        padding: 20px; }
+        main .gridContacto .registrate .speaker-form .form-row label {
+          flex-direction: column; }
+        main .gridContacto .registrate .speaker-form .form-row input {
+          flex-direction: column; }
+        main .gridContacto .registrate .speaker-form .form-row button {
+          background-color: #54da66; }
+
+/*MAIN EXITO*/
+main h1 {
+  background-color: black;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  justify-content: center; }
 
 /*MAIN NOSOTROS*/
 main .nos {

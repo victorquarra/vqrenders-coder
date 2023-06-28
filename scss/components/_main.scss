@@ -122,6 +122,7 @@
             justify-content: center;
             font-weight: normal
         }
+
         .gridContacto {
             @include grid (grid, 5px);
             grid-template-rows: 1fr;
@@ -164,13 +165,47 @@
                 font-size: 15px;
                 font-weight: normal;
                 padding: 10px;
+
+                .speaker-form {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+
+                    .form-row {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 20px;
+
+                        label {
+                            flex-direction: column;
+                        }
+
+                        input {
+                            flex-direction: column;
+                        }
+                        button{
+                            background-color: rgb(84, 218, 102);
+                        }
+                    }
+                }
             }
+        }
+    }
+
+    /*MAIN EXITO*/
+    main {
+        h1 {
+            background-color: black;
+            color: white;
+            font-family: $tipografiaGeneral;
+            text-align: center;
+            justify-content: center;
         }
     }
 
     /*MAIN NOSOTROS*/
     main {
-        .nos{
+        .nos {
             background-color: nth($colores, 5);
             color: white;
             padding: 10px;
@@ -178,6 +213,7 @@
             justify-content: center;
             font-weight: normal
         }
+
         .nosotros {
             font-family: $tipografiaGeneral;
             @include grid (grid, 5px);
