@@ -51,6 +51,7 @@
                             color: black;
                             background-color: nth($colores, 4);
                             transition: 0.5s;
+                            padding: 5px;
 
                             &:hover {
                                 background-color: nth($colores, 3);
@@ -128,21 +129,23 @@
             margin: 5px;
 
             .contactanos {
+                background-color: nth($colores, 5);
                 font-family: $tipografiaGeneral;
+                color: white;
                 font-size: 15px;
                 font-weight: normal;
                 justify-content: center;
-                text-align: left;
+                text-align: center;
                 padding: 10px;
 
                 div {
                     display: flex;
                     flex-direction: column;
-                    text-align: left;
+                    text-align: center;
 
                     a {
                         text-decoration: none;
-                        color: black;
+                        color: white;
                     }
                 }
 
@@ -153,8 +156,10 @@
             }
 
             .registrate {
+                background-color: nth($colores, 5);
+                color: white;
                 @include grid (grid, 5px);
-                text-align: left;
+                text-align: center;
                 font-family: $tipografiaGeneral;
                 font-size: 15px;
                 font-weight: normal;

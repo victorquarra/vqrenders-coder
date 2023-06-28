@@ -51,7 +51,8 @@ main .gridContainer {
         text-decoration: none;
         color: black;
         background-color: #e4e4e4;
-        transition: 0.5s; }
+        transition: 0.5s;
+        padding: 5px; }
         main .gridContainer .tercerItem .todasIdeas .ideas a:hover {
           background-color: silver; }
         main .gridContainer .tercerItem .todasIdeas .ideas a:active {
@@ -102,25 +103,29 @@ main .gridContacto {
   grid-template-columns: 1fr 1fr;
   margin: 5px; }
   main .gridContacto .contactanos {
+    background-color: black;
     font-family: "Montserrat", sans-serif;
+    color: white;
     font-size: 15px;
     font-weight: normal;
     justify-content: center;
-    text-align: left;
+    text-align: center;
     padding: 10px; }
     main .gridContacto .contactanos div {
       display: flex;
       flex-direction: column;
-      text-align: left; }
+      text-align: center; }
       main .gridContacto .contactanos div a {
         text-decoration: none;
-        color: black; }
+        color: white; }
     main .gridContacto .contactanos iframe {
       margin-top: 5px; }
   main .gridContacto .registrate {
+    background-color: black;
+    color: white;
     display: grid;
     gap: 5px;
-    text-align: left;
+    text-align: center;
     font-family: "Montserrat", sans-serif;
     font-size: 15px;
     font-weight: normal;
