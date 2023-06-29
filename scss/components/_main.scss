@@ -183,8 +183,9 @@
                         input {
                             flex-direction: column;
                         }
-                        button{
+                        .enviar{
                             background-color: rgb(84, 218, 102);
+                            justify-content: center;
                         }
                     }
                 }

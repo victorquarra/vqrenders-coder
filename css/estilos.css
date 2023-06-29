@@ -142,8 +142,9 @@ main .gridContacto {
           flex-direction: column; }
         main .gridContacto .registrate .speaker-form .form-row input {
           flex-direction: column; }
-        main .gridContacto .registrate .speaker-form .form-row button {
-          background-color: #54da66; }
+        main .gridContacto .registrate .speaker-form .form-row .enviar {
+          background-color: #54da66;
+          justify-content: center; }
 
 /*MAIN EXITO*/
 main h1 {
