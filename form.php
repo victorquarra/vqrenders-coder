@@ -18,7 +18,7 @@ $asunto = 'Este mail fue enviado desde la web';
 mail($para, $asunto, utf8_decode($mensaje), $header);
 
 //Redireccion al haber enviado el form
-header('Location:exito.html')
+header('Location: https://vqrendersstudio.com/pages/exito.html')
 
 
 ?>
