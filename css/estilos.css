@@ -33,6 +33,14 @@ main .gridContainer {
     main .gridContainer .primerItem img {
       width: 100%;
       height: auto; }
+  main .gridContainer .segundoItem h1 {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 25px; }
   main .gridContainer .tercerItem .todasIdeas {
     display: flex; }
     main .gridContainer .tercerItem .todasIdeas .ideas {
