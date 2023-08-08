@@ -1,8 +1,4 @@
 <?php
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
-$to = 
 
 $nombre = $_POST['name'];
 $mail = $_POST['email'];
@@ -25,6 +21,4 @@ mail($para, $asunto, utf8_decode($mensaje), $header);
 header('Location: https://vqrendersstudio.com/pages/exito.html')
 
 
-?> 
-
-
+?>

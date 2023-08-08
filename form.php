@@ -1,24 +1,14 @@
 <?php
-
-$nombre = $_POST['name'];
-$mail = $_POST['email'];
-$mensaje = $_POST['textarea'];
-
-//Como me va a llegar el cuerpo del mail, lo que la gente escribio
-$mensaje = "Este mensaje fue enviado por " . $nombre . ",\r\n";
-$mensaje .= "Su e-mail es: " . $mail . " \r\n";
-$mensaje .= "Mensaje: " . $_POST['mensaje'] . " \r\n";
-$mensaje .= "Enviado el: " . date('d/m/Y', time());
-
-$para = 'vqrenders@gmail.com';
-$asunto = 'Este mail fue enviado desde la web';
-
-//funcion mail
-//a quien le mando el mail
-mail($para, $asunto, utf8_decode($mensaje), $header);
-
-//Redireccion al haber enviado el form
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+$to = "vqrenders@gmail.com";
+$subject = "Mail from website";
+$txt = "Name = ". $name . "\r\n Email = " . $email . "\r\n Message = " . $message;
+$headers = "From: noreply@vqrendersstudio.com";
+if($email!=NULL){
+    mail($to,$subject,$txt,$headers);
+}
+//redirect
 header('Location: https://vqrendersstudio.com/pages/exito.html')
-
-
 ?>
